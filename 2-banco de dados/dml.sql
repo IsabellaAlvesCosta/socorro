@@ -11,8 +11,8 @@ SELECT TB_AGENDAMENTO         tabela,
        DS_TELEFONE          telefone,
        DS_SITUACAO          situacao 
 FROM TB_AGENDAMENTO
-WHERE NM_PACIENTE        = 'Robert Arboleda';
-  AND DS_SITUACAO        = 'Confirmada',
+WHERE NM_PACIENTE        = 'Robert Arboleda'
+  AND DS_SITUACAO        = 'Confirmada';
         
 
 
