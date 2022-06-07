@@ -29,7 +29,7 @@ SELECT ID_FUNCIONARIO     ID,
    AND DS_SENHA         = '1234';
 	
 
--- efetuar logiN
+-- efetuar login
 SELECT TB_FUNCIONARIO      id,
 	   NM_PSICOLOGO        nome,
        DS_EMAIL            email,

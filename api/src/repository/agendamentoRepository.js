@@ -15,6 +15,21 @@ return consulta;
 
 }
 
+export async function solicitarConsulta(consulta) {
+
+    const comando = 
+    
+        ` insert into TB_AGENDAMENTO (ID_AGENDAMENTO, NM_PACIENTE, DS_CPF, DT_NASCIMENTO, HR_AGENDAMENTO, DT_AGENDAMENTO, DS_TELEFONE)
+    
+             values (?, ?, ?, ?, ?, ?, ?, ?)`;
+    
+    const [resposta] = await con.query (comando,[consulta.paciente, consulta.cpf, consulta.nascimento, consulta.agendamento, consulta.agendamento, consulta.telefone]);
+    consulta.id = resposta.insertId;
+    
+    return consulta;
+    
+    }
+
 
 export async function visualizarConsulta() {
 
